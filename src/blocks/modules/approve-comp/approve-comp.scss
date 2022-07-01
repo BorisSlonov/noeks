@@ -1,0 +1,21 @@
+.approve-comp {
+    list-style: none;
+}
+.approve-comp__item {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--gray);
+}
+
+.approve-comp__item:first-child {
+    padding-top: 0;
+}
+
+.approve-comp__title {
+    font-size: 24px;
+    font-variation-settings: "wght" 500;
+}
+
+.approve-comp__p {
+    margin-top: 20px;
+    font-size: 16px;
+}

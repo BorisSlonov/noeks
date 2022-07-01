@@ -1,0 +1,60 @@
+.section-projects {
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tabs__titles {
+  width: 320px;
+}
+
+.tabs__title {
+  font-family: "Courier New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(10, 9, 13, 0.5);
+  padding-left: 25px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--dark-gray);
+  }
+}
+
+.tabs__title:not(:first-child) {
+  margin-top: 30px;
+}
+
+.tabs__title_active {
+  color: var(--dark-gray);
+  border-color: var(--orange);
+}
+
+.tabs__items {
+  min-width: 0;
+  width: 1290px;
+  transform: translateX(50px);
+}
+
+.project-slider-content {
+  max-width: 360px;
+}
+
+@media (max-width: 1239px) {
+  .tabs {
+    grid-template-columns: 1fr;
+  }
+  
+  .tabs__titles {
+    width: 100%;
+    overflow-x: scroll;
+    max-width: 100%;
+  }
+}
