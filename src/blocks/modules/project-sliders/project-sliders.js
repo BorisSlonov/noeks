@@ -11,7 +11,7 @@ const swiperMsk = new Swiper(".project-slider_msk", {
   breakpoints: {
     // when window width is >= 1240px
     1240: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       spaceBetween: 60,
     },
   },

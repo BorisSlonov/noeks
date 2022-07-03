@@ -1,6 +1,15 @@
 .section-projects {
   max-width: 1920px;
   overflow-x: hidden;
+  margin: 0 auto;
+
+  .swiper-slide {
+    max-width: 360px;
+  }
+}
+
+.tabs__items {
+  padding-left: 120px;
 }
 
 .tabs {
@@ -40,7 +49,6 @@
 .tabs__items {
   min-width: 0;
   width: 1290px;
-  transform: translateX(50px);
 }
 
 .project-slider-content {
@@ -48,10 +56,20 @@
 }
 
 @media (max-width: 1239px) {
+  .section-projects {
+    .swiper-slide {
+      max-width: auto;
+    }
+  }
   .tabs {
     grid-template-columns: 1fr;
   }
-  
+
+  .tabs__items {
+    padding-left: 0;
+    width: 100%;
+  }
+
   .tabs__titles {
     width: 100%;
     overflow-x: scroll;
