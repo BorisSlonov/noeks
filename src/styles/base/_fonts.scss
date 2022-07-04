@@ -2,10 +2,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-display: swap;
-  /* Браузер сначала попробует найти шрифт локально */
   src: local("Montserrat"),
-    /* Если не получилось, загрузит woff2 */
-      url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+    url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
@@ -13,8 +11,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: url("/fonts/couriernew.woff2") format("woff2");
+  src: local("Courier New"), url("/fonts/couriernew.woff2") format("woff2");
 }
 
 @font-face {
@@ -22,6 +19,5 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  /* Браузер сначала попробует найти шрифт локально */
   src: url("/fonts/CourierNewPS-BoldMT.woff2") format("woff2");
 }

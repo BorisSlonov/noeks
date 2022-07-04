@@ -77,7 +77,7 @@
   display: flex;
 
   &__link {
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
       svg use {
         stroke: var(--orange);
@@ -93,6 +93,7 @@
 .footer__rules {
   text-align: center;
   padding: 30px 0;
+  color: var(--dark-gray);
 }
 
 @media (max-width: 1023px) {
