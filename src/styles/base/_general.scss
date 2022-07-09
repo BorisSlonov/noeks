@@ -134,6 +134,7 @@ img {
   display: inline-block;
   padding: 15px 30px;
   font-family: "Courier New";
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--dark-gray);
   font-size: 14px;
@@ -154,6 +155,13 @@ img {
   background-color: var(--yellow);
   &:hover {
     background-color: rgba(223, 209, 167, 0.9);
+  }
+}
+
+.main-btn_gray {
+  background-color: var(--gray);
+  &:hover {
+    background-color: var(--gray-light);
   }
 }
 .base-link {
@@ -235,7 +243,7 @@ img {
     width: 100%;
   }
 
-  .page-title__body  {
+  .page-title__body {
     padding: 25px 0 12px;
     margin-bottom: 25px;
     flex-direction: column;
@@ -249,5 +257,75 @@ img {
   .page-title__link {
     display: inline-block;
     margin-top: 15px;
+  }
+}
+
+//404
+
+.sorry {
+  position: relative;
+  text-align: center;
+  padding-bottom: 150px;
+  padding-top: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 740px;
+    background-image: url("../img/sprites/gray-logo.svg");
+    z-index: -1;
+  }
+
+  &__h1 {
+    font-size: 288px;
+  }
+
+  &__p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sorry {
+    position: relative;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 740px;
+      background-image: url("../img/sprites/gray-logo.svg");
+      background-repeat: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      z-index: -1;
+    }
+
+    &__h1 {
+      font-size: 144px;
+    }
+
+    &__p {
+      font-family: "Montserrat";
+      font-size: 24px;
+      text-transform: none;
+      margin-bottom: 60px;
+    }
   }
 }

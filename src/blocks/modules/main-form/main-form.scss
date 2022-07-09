@@ -10,6 +10,11 @@
 .main-form__item {
   display: flex;
   flex-direction: column;
+
+  &_politic {
+    margin-top: 0;
+    padding: 25px 0;
+  }
 }
 
 .main-form__item:not(:first-child) {
@@ -34,7 +39,6 @@
   resize: none;
 }
 
-
 .main-form__input:focus {
   border-color: var(--orange);
 }
@@ -43,6 +47,13 @@
   color: #1f1f1f;
   font-size: 16px;
   font-variation-settings: "wght" 500;
+}
+
+.main-form__politic {
+  font-family: "Courier New";
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(10, 9, 13, 0.5);
 }
 
 .myFile-wrapper {
@@ -77,6 +88,9 @@
   content: "";
   position: absolute;
   background-image: url("../img/sprites/sprite.svg#icon-download");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 24px;
   height: 24px;
   left: 0;
@@ -91,6 +105,9 @@
   width: 16px;
   height: 16px;
   background-image: url("../img/sprites/sprite.svg#icon-delete");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   cursor: pointer;
 }
 
@@ -113,7 +130,7 @@
   display: none;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .myFiles-txt {
     display: block;
     margin-top: 15px;

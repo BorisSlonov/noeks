@@ -1,0 +1,11 @@
+.section-prices__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 150px;
+}
+
+@media(max-width:767px) {
+    .section-prices__btn-wrapper {
+        margin: 30px auto 50px;
+    }
+}

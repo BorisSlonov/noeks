@@ -13,6 +13,7 @@ const swiper = new Swiper(".main-swiper", {
   fadeEffect: {
     crossFade: true
   },
+  noSwiping: true
 });
 
 swiper.on("slideChange", function () {
